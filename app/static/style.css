@@ -1,3 +1,26 @@
-h4{
-  color: red;
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Mochiy+Pop+P+One&family=Rubik+Beastly&display=swap');
+#logo1{
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+#logo2{
+  font-family: 'Aclonica', sans-serif;
+}
+
+@media screen and ( min-width:768px){
+  
+  .navbar-brand{
+    margin: auto
+  }
+  .container-fluid{
+    position: relative;
+  }
+   .navbar-nav{
+
+     position: absolute;
+     top: 0;
+     right: 0;
+     
+   }
+
+
 }
