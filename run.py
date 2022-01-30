@@ -1,9 +1,7 @@
 from flask import Flask
-import requests
-import os 
+from app import app
 
-app = Flask(__name__)
 
-@app.route('/')
-def home():
-  return 'Welcome to the Jungle'
+
+if __name__ == '__main__':
+  app.run(debug = True)

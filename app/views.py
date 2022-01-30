@@ -1,9 +1,10 @@
-from flask import app, render_template
+from app import app
+from flask import render_template
 
 
-@app.route('/')
-def index ():
-  """
-  Returns a certain page I am yet to decide lol
-  """
+
   
+@app.route('/')
+def home():
+  title = "Newscorner"
+  return render_template('index.html', title = title)
