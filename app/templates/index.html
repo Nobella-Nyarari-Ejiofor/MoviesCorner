@@ -105,8 +105,7 @@
      </div>
    </div>
  </section>
- {{namesource}}
-  {{news}}
+
  <div class="container more-news">
    <h2 class ="text-center">Headlines </h2>
    <div class="row">
@@ -127,6 +126,20 @@
    </div>
 
    <div class="container most-news">
+    {% for names, descriptions,urls in source%}
+     <div class="row">
+      <div class="col-md-3">
+        <div class="card p-3" style="width: 25rem;">
+          <div class="card-title">
+            <h3><a href="{{url}}">{{names}}</a></h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">{{descriptions}}</p>
+          </div>
+        </div>
+       </div>
+     </div>
+    {% endfor %}
 
    </div>
  

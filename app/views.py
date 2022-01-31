@@ -16,8 +16,8 @@ def home():
   sourcesOrigin = newsapi.get_sources()
   namesource = sourcesOrigin['sources']
   
-  name = []
-  description = []
+  names = []
+  descriptions = []
   urls = []
 
 
@@ -27,9 +27,13 @@ def home():
   img =[]
   url =[]
   date=[]
-  # for i in range (len(namesource)):
-  #   mysource = namesource[i]
-  #    name.append = 
+
+  for i in range (len(namesource)):
+    mysource = namesource[i]
+    names.append(mysource['name'])
+    descriptions.append(mysource['description'])
+    urls.append(mysource['url'])
+
 
   for i in range (len(articles)):
     myarticles = articles[i]
@@ -40,9 +44,11 @@ def home():
     url.append(myarticles['url'])
     myarticles['publishedAt'] = pd.to_datetime(myarticles['publishedAt'], format='%Y/%m/%d ')
     date.append(myarticles['publishedAt'])
+
    
 
 
   mylist = zip(news,desc,url,date,img)
+  mysource =zip(names,descriptions,urls)
 
-  return render_template('index.html', topheadlines =topheadlines , context = mylist ,namesource = namesource ,news = topperheadlines )
+  return render_template('index.html', topheadlines =topheadlines,context = mylist ,source =mysource,news = topperheadlines , )
