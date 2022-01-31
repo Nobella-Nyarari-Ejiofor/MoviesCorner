@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=EB+Garamond:wght@400;500&family=Mochiy+Pop+P+One&family=Rubik+Beastly&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=EB+Garamond:wght@400;500&family=IBM+Plex+Serif&family=Mochiy+Pop+P+One&family=Rubik+Beastly&display=swap');
 *{
-  font-family: 'EB Garamond', serif;
+  font-family: 'IBM Plex Serif', serif;
 }
 #logo1{
   font-family: 'Mochiy Pop P One', sans-serif;
