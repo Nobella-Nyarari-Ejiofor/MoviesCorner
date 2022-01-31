@@ -3,20 +3,22 @@ from flask import render_template
 from newsapi import NewsApiClient
 import json
 import pandas as pd
+import datetime
 
   
 @app.route('/')
 def home():
   newsapi = NewsApiClient(api_key='11319835f3f642b08ffc5ed98495e990')
   topheadlines = newsapi.get_top_headlines( sources='bbc-news')
+  topperheadlines = newsapi.get_everything(  sources='bbc-news',)
  #this articles is a dictionary . 
   articles = topheadlines['articles']
   sourcesOrigin = newsapi.get_sources()
   namesource = sourcesOrigin['sources']
   
-  # name = []
-  # description = []
-  # urls = []
+  name = []
+  description = []
+  urls = []
 
 
  
@@ -36,11 +38,11 @@ def home():
     desc.append(myarticles['description'])
     img.append(myarticles['urlToImage'])
     url.append(myarticles['url'])
-    # myarticles['publishedAt'] = myarticles.to_datetime(myarticles['publishedAt'], format='%Y/%d/%m %H:%M:%S')
+    myarticles['publishedAt'] = pd.to_datetime(myarticles['publishedAt'], format='%Y/%m/%d ')
     date.append(myarticles['publishedAt'])
    
 
 
   mylist = zip(news,desc,url,date,img)
 
-  return render_template('index.html', topheadlines =topheadlines , context = mylist )
+  return render_template('index.html', topheadlines =topheadlines , context = mylist ,namesource = namesource ,news = topperheadlines )

@@ -105,9 +105,10 @@
      </div>
    </div>
  </section>
-  
+ {{namesource}}
+  {{news}}
  <div class="container more-news">
-   <h2 class ="text-center">Other News</h2>
+   <h2 class ="text-center">Headlines </h2>
    <div class="row">
     {% for news, desc,url,date,i in context %}
      <div class="col-md-4">
@@ -123,6 +124,10 @@
       </div>
      </div>
      {% endfor %}
+   </div>
+
+   <div class="container most-news">
+
    </div>
  
 
