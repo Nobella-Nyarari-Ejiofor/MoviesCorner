@@ -44,3 +44,10 @@
 .more-news p a:hover{
   color: red;
 }
+.most-news h3 a{
+  color: black;
+  text-decoration: none;
+}
+.most-news h3 a:hover{
+  color: red;
+}
