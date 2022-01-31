@@ -12,7 +12,9 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand lead"  href="#"><span id="logo1">News</span><span id ="logo2">Corner</span></a>
+      <div class="logo-con text-center">
+        <a class="navbar-brand lead "  href="#"><span id="logo1">News</span><span id ="logo2">Corner</span></a>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,10 +22,10 @@
       
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Headlines</a>
+            <a class="nav-link active" aria-current="page" href="#"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="#"></a>
           </li>
         </ul>
        
@@ -31,6 +33,108 @@
     </div>
    
   </nav>
+ 
+  <div class="container-intro p-5">
+    <p class="lead ">Welcome to NewsCorner . We deliver timely , accurate and updatd news on events that happen from all over the world .We love to keep our readers on tabs with each and everything that they need to know.</p>
+  </div>
+ <section>
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col-md-3 short-news">
+         <div class="row">
+           <div class="img-fluid">
+              <img src="../static/images/dumpsite.jpeg" alt="">
+              <p> <a target ="blank" href = "https://sustainabledevelopment.un.org/content/documents/dsd/dsd_aofw_ni/ni_pdfs/NationalReports/tanzania/waste.pdf">Tanzania reports high numbers of chloride in their water due topoor waste manaement.</a></p>
+           </div>
+         </div>
+         <div class="row">
+          <div class="img-fluid">
+             <img src="../static/images/children.jpeg" alt="">
+             <p> <a target ="blank"href = "https://www.nexxushub.com/blog/CBC-New-Kenya-Education-System#:~:text=CBC%20stands%20for%20Competency%20Based,system%20was%20introduced%20in%202017.&text=At%20this%20point%20in%20time,into%20a%206%20year%20term.">Kenya introduces the CBC curriculum for<br> primary school.</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="img-fluid">
+             <img src="../static/images/download.jpeg" alt="">
+             <p> <a target ="blank" href = "https://www.healthline.com/health-news/herbal-remedies-covid-19-what-to-know">People turn to natural remedies to boost their immunities against covid 19.</a></p>
+          </div>
+        </div>
+       </div>
+   
+      
+       <div class="col-md-9">
+        <div id="carouselExampleCaptions" class="carousel slide text-dark" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../static/images/castle.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>The British Castle</h5>
+                <p>The British preserved teritorry is now under transforming rennovations after a decade.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../static/images/earthquake.jpg.jpg.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block ">
+                <h5>Haiti Earthquake.</h5>
+                <p>Haiti has once again experienced an earthquake for the second time this year</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../static/images/bitcoin.jpeg" class="d-block w-100" alt="..">
+              <div class="carousel-caption d-none d-md-block ">
+                <h5>Bitcoin</h5>
+                <p>Bitcoin prices decrease drastically.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+       </div>
+     </div>
+   </div>
+ </section>
+  
+ <div class="container more-news">
+   <h2 class ="text-center">Other News</h2>
+   <div class="row">
+    {% for news, desc,url,date,i in context %}
+     <div class="col-md-4">
+      <div class="card p-3" style="width: 25rem;">
+        <img class = "img-fluid" src="{{i}}" class="card-img-top" alt="...">
+        <div class="card-title">
+          <p><a href="{{url}}">{{news}}</a></p>
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{desc}}</p>
+          <p>Published on: {{date}}</p>
+        </div>
+      </div>
+     </div>
+     {% endfor %}
+   </div>
+ 
+
+ </div>
+ <footer>
+  <div class="row container">
+     <div class="content-footer text-center">
+      <a class="navbar-brand lead"  href="#"><span id="logo1">News</span><span id ="logo2">Corner</span></a>
+      <p>©CopyRight </p>
+     </div>
+    </div>
+   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

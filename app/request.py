@@ -1,7 +1,14 @@
+from flask import request
 from app import app
 import urllib.request,json
+from .config import API_KEY, BASE_URL
 from models import news
 
 News = news.News
 
-newsapi =f' https://newsapi.org/v2/top-headlines?country=us&apiKey=11319835f3f642b08ffc5ed98495e990'
+# api_key = app.config[API_KEY]
+# base_url = app.config[BASE_URL]
+
+# def getTheNews(category):
+#   getTheNews_url = base_url.format(category,api_key)
+  

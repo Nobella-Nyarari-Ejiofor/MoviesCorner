@@ -24,3 +24,23 @@
 
 
 }
+.container-intro p{
+  text-align: center;
+}
+
+.short-news p a {
+  text-decoration: none;
+  color: black;
+}
+.short-news p a:hover{
+  color: red;
+}
+.short-news img{
+  width: 310px;
+}
+.more-news p a{
+  color: black;
+}
+.more-news p a:hover{
+  color: red;
+}
