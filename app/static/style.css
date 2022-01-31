@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Mochiy+Pop+P+One&family=Rubik+Beastly&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=EB+Garamond:wght@400;500&family=Mochiy+Pop+P+One&family=Rubik+Beastly&display=swap');
+*{
+  font-family: 'EB Garamond', serif;
+}
 #logo1{
   font-family: 'Mochiy Pop P One', sans-serif;
 }
@@ -29,7 +32,6 @@
 }
 
 .short-news p a {
-  text-decoration: none;
   color: black;
 }
 .short-news p a:hover{
@@ -46,8 +48,14 @@
 }
 .most-news h3 a{
   color: black;
-  text-decoration: none;
 }
 .most-news h3 a:hover{
   color: red;
+}
+.footer-brand{
+  color: black;
+  text-decoration: none;
+}
+h3{
+  font-family: 'Mochiy Pop P One', sans-serif; 
 }

@@ -22,7 +22,7 @@
       
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"></a>
+            <a class="nav-link active" aria-current="page" href="#newssource">Our News Sources</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"></a>
@@ -107,7 +107,7 @@
  </section>
 
  <div class="container more-news">
-   <h2 class ="text-center">Headlines </h2>
+   <h3 class ="text-center">Headlines </h3>
    <div class="row">
     {% for news, desc,url,date,i in context %}
      <div class="col-md-4">
@@ -125,13 +125,14 @@
      {% endfor %}
    </div>
 
-   <div class="container most-news">
+    <div class="container most-news">
    
-     <div class="row">
+     <div class="row " id="newssource">
+       <h3 class="text-center">News Sources</h3>
       {% for names, descriptions,urls in source%}
       <div class="col-md-3">
        
-         <div class="card p-3 m-3" style="width: 20rem;height: auto;">
+         <div class="card p-3 m-3" style="width: 20rem;height: 20rem;">
           
            <div class="card-title">
              <h3><a href="{{urls}}">{{names}}</a></h3>
@@ -155,7 +156,7 @@
  <footer>
   <div class="row container">
      <div class="content-footer text-center">
-      <a class="navbar-brand lead"  href="#"><span id="logo1">News</span><span id ="logo2">Corner</span></a>
+      <a class="footer-brand lead"  href="#"><span id="logo1">News</span><span id ="logo2">Corner</span></a>
       <p>©CopyRight </p>
      </div>
     </div>
