@@ -11,4 +11,3 @@ class News :
      self.content = content 
 
      
-
