@@ -45,9 +45,6 @@ def home():
     myarticles['publishedAt'] = pd.to_datetime(myarticles['publishedAt'], format='%Y/%m/%d ')
     date.append(myarticles['publishedAt'])
 
-   
-
-
   mylist = zip(news,desc,url,date,img)
   mysource =zip(names,descriptions,urls)
 
