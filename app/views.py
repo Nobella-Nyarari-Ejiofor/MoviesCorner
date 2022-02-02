@@ -2,7 +2,6 @@ from app import app
 from flask import render_template
 from newsapi import NewsApiClient
 import json
-import pandas as pd
 import datetime
 
   
