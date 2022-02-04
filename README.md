@@ -123,6 +123,6 @@ Github - [NOBELLA EJIOFOR](https://github.com/RichieOrito)
 
 ## Live Link
 
-LiveLink- [Gh-pages](newscorner.herokuapp.com/)
+LiveLink- [heroku] https://newscorner.herokuapp.com/
 
 [Go Back to the top](#oriNews)
