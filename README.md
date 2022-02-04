@@ -32,11 +32,11 @@ This is a news application where user's can view news sources and their details.
 
 * Open Terminal `ctrl+Alt+T`
 
-* Git clone https://github.com/RichieOrito/OriNews.git
+* Git clone https://github.com/Nobella-Nyarari-Ejiofor/NewsCorner
 
 or
 
-* Git fork - Enter into your own repository and search-https://github.com/RichieOrito/OriNews then click on fork to add
+* Git fork - Enter into your own repository and search-https://github.com/Nobella-Nyarari-Ejiofor/NewsCorner then click on fork to add
 it on your own repository.
 
 * Navigate into the cloned project. 
@@ -113,9 +113,6 @@ SOFTWARE.
 [Go Back to the top](#oriNews)
 
 ## Authors Info
-
-Slack Profile - [Nobella Ejiofor]
-Linked - [Richard Orito](https://www.linkedin.com/in/richie-orito/)
 
 Gmail - [nobella.ejiofor@student.moringaschool.com]()
 
