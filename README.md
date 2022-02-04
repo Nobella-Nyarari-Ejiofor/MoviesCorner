@@ -114,8 +114,7 @@ SOFTWARE.
 
 ## Authors Info
 
-Slack Profile - [Nobella Ejiofor](https://app.slack.com/client/T0101L740P4/C010GLANY3A/user_profile/U02EZFHEJUA)
-
+Slack Profile - [Nobella Ejiofor]
 Linked - [Richard Orito](https://www.linkedin.com/in/richie-orito/)
 
 Gmail - [nobella.ejiofor@student.moringaschool.com]()
@@ -124,6 +123,6 @@ Github - [NOBELLA EJIOFOR](https://github.com/RichieOrito)
 
 ## Live Link
 
-LiveLink- [Gh-pages](https://orinews.herokuapp.com/)
+LiveLink- [Gh-pages](newscorner.herokuapp.com/)
 
 [Go Back to the top](#oriNews)
